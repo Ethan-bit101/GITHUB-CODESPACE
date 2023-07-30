@@ -54,29 +54,29 @@
 		$email = "ethan@gmail.com";
 		$phone_number = "+63900033333";
 
-		// $query = "Insert into user (user_id, username, email, phone_number) values (
-		// 	'".$user_id."',
-		// 	'".$username."',
-		// 	'".$email."',
-		// 	'".$phone_number."'
-		// )";
-
-		// $result = mysqli_query($conn, $query);
-		// if ($result) {
-		// 	echo "User has been successfully added";
-		// }else{
-		// 	echo "ERROR: ".mysqli_error($conn);
-		// }
-
-		// delete User
-		$query = "Delete from user where user_id = '".$user_id."'";
+		$query = "Insert into user (user_id, username, email, phone_number) values (
+			'".$user_id."',
+			'".$username."',
+			'".$email."',
+			'".$phone_number."'
+		)";
 
 		$result = mysqli_query($conn, $query);
 		if ($result) {
-			echo "User ".$user_id." has been successfully deleted";
+			echo "User has been successfully added";
 		}else{
 			echo "ERROR: ".mysqli_error($conn);
 		}
+
+		// delete User
+		// $query = "Delete from user where user_id = '".$user_id."'";
+
+		// $result = mysqli_query($conn, $query);
+		// if ($result) {
+		// 	echo "User ".$user_id." has been successfully deleted";
+		// }else{
+		// 	echo "ERROR: ".mysqli_error($conn);
+		// }
 
 		mysqli_close($conn);
 	?>
