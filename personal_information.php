@@ -58,10 +58,5 @@
 	<p>First name: <input type="text" placeholder="First name" echo 
     $first_name;?></p>
     <p></p>
-
-
-
-
-
 	</form>
 </html>
