@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Website-design.css">
+    <script src="behavior.js"></script>
+    <title></title>
+</head>
+
+<header>
+    <nav>
+        <ul class="nav-left">
+            <li class="logo">Sari Sari<br> Store</li>
+            <li><div class="search-box">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div></li>
+            <button class="category">Category</button>
+            <div class="nav-right">
+            <li>Add to cart</li>
+            <li>|My account|</li>
+            <li>|Log out|</li>
+        </div>
+        </ul>
+    </nav>
+</header>
+<body>
+    
+    
+    <main>
+    <ul class="main-nav">
+        <li>Home|</li>
+        <li><details><Summary>Shop|</Summary></details></li>
+        <li>New Arrivals|</li>
+        <li>All Products|</li>
+        <li>Categories|</li>
+        <li>Limited Edition|</li>
+    </ul>
+    <aside id="cart-items"></aside>
+    <section>
+        <article>
+            <form action="Home.php"method="POST" enctype="multipart/form-data">
+            <div class="products">
+            <figure>
+                <img src="C:\xampp\htdocs\database\Features\images\magicsarap.webp">
+                <figcaption>Magic Sarap</figcaption>
+                <div id="counter">
+                    <button id="decrease-button">-</button>
+                    <span id="counter">0</span>
+                    <button id="increase-button">+</button><br>
+                    <button id="add-to-cart">Add to Cart</button>
+                    
+                    
+                  </div>
+                </div>
+            </figure>
+        </form>
+        </article>
+    </section>
+    <footer>
+
+    </footer>
+</main>
+</body>
+</html>
