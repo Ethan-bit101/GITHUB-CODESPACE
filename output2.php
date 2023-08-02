@@ -5,7 +5,7 @@
         </title>
     </head>
     <body>
-        <form method="POST" action="output3.php">
+        <form method="POST" action="output2.php">
             <h2>Personal Information</h2>
             First Name:<input type="text" name="firstname" placeholder="First Name" required><br>
             Last Name:<input type="text" name="lastname" placeholder="Last Name" required><br>
