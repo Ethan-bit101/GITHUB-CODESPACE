@@ -87,5 +87,6 @@
 		mysqli_close($conn);
         }
 	?>
+    <p><a href="output2.php">Login</a>
 	</body>
 </html>
