@@ -1,0 +1,622 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 20px;
+
+    height: 80px;
+}
+
+nav {
+    cursor: pointer;
+    box-shadow: 10px 15px 20px;
+    background-color: whitesmoke;
+    font-size: small;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+    cursor: pointe r
+}
+
+nav ul li a {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+application img:hover.content {
+    content: url(application\ \(1\).png);
+    /* Replace 'hover_image.jpg' with the path to your hover image */
+}
+
+.application:hover .content {
+    display: block;
+}
+
+/* Add the following code to rotate the image on hover */
+.application img {
+    transition: transform 0.3s ease;
+    /* Add transition property for smooth animation */
+}
+
+.application img:hover {
+    transform: rotate(90deg);
+    /* Rotate the image 90 degrees to the right on hover */
+}
+
+.application img:not(:hover) {
+    transform: rotate(0deg);
+    /* Return the image to its original position when not hovered */
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.container img {
+    position: absolute;
+    width: 30px;
+    top: -90px;
+    left: 110px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover img {
+    transform: rotate(90deg);
+}
+
+.dropdown1 {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 200px;
+    padding: 0px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.dropdown1 li {
+    list-style-type: none;
+}
+
+.dropdown1 li a {
+    list-style-type: none;
+    color: black;
+    text-transform: none;
+    text-decoration: none;
+
+}
+
+.container:hover .dropdown1 {
+    display: block;
+}
+
+section.banner {
+    box-shadow: 10px 15px 20px;
+    border: 2px solid black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+section {}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+}
+
+.product img {
+    border: 1px solid black;
+    width: 140px;
+    height: 140px;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Broadway
+}
+
+.rightnav {
+    float: right;
+    position: relative;
+}
+
+.logo img {
+    display: block;
+    border: 1px solid black;
+    background-color: red;
+    width: 70px;
+    position: absolute;
+    top: 7px;
+    border-radius: 30px;
+}
+
+
+#search,
+.search-container,
+#search-button img,
+#search-button,
+.promo-code {
+    display: inline-block;
+    left: 500px;
+    top: -46px;
+    position: inherit;
+}
+
+.location {
+    font-size: xx-small;
+    width: 110px;
+    position: inherit;
+    left: 110px;
+}
+
+#signup {
+    background-color: red;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signup:hover {
+    background-color: darkred;
+}
+
+#login {
+    background-color: green;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login:hover {
+    background: darkgreen;
+}
+
+#profile img,
+#bell img,
+#cart img {
+    width: 24px;
+    display: inline-block;
+}
+
+#profile {
+    position: inherit;
+    top: 0px;
+}
+
+#bell {
+    position: inherit;
+    top: -30px;
+    left: -50px;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    font-family: fantasy;
+    font-size: small;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+#cart img {
+    display: inline-block;
+    position: relative;
+    left: -120px;
+    top: -60px;
+    width: 35px;
+}
+
+search input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.search-container {
+    position: relative;
+
+}
+
+#search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 500px;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-button {
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    position: inherit;
+    top: 0px;
+    height: 36px;
+    left: 500px;
+
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#search-button img {
+    width: 25px;
+    position: inherit;
+    left: 4px;
+    top: 5px;
+}
+
+.bottomnav a {
+    margin-top: 10px;
+    font-size: x-small;
+    margin-right: 10px;
+    color: black;
+}
+
+.promo-code {
+    position: relative;
+    top: -40px;
+    left: 0px;
+    font-size: small;
+}
+
+.promo-code input[type="text"] {
+    height: 12px;
+    width: 107px;
+}
+
+
+figure {
+    display: inline-block;
+    position: inherit;
+}
+
+figcaption {
+    margin-top: 15px;
+    position: inherit;
+    font-weight: bolder;
+}
+
+.hellocontent {
+    text-align: center;
+    color: black;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.service {
+    border: 2px solid black;
+    position: absolute;
+    background-color: white;
+    left: 150px;
+    top: 0px;
+    position: relative;
+    width: 1233px;
+    
+}
+
+.service figure img {
+    position: inherit;
+    left: 40px;
+    width: 0px;
+
+}
+
+.service-caption {
+    position: inherit;
+    left: 40px;
+    margin-top: 15px;
+    position: inherit;
+    text-align: center;
+    font-size: xx-small;
+    font-weight: bolder;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0)
+}
+
+.intro_store {
+    font-size: 40px;
+    text-transform: capitalize;
+    background-color: darkcyan;
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+    margin-top: 20px;
+    padding: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.card {
+
+    margin-top: 15px;
+    padding: 40px;
+}
+
+.welcome-content {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #000000;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border: 1px solid black;
+    border-color: white;
+}
+
+fieldset {
+    border-style: double;
+    border-color: black;
+}
+
+aside {
+    padding: 15px;
+    float: right;
+    border-color: black;
+    height: 600px;
+    border: 1px solid black;
+}
+
+/* FOOTER */
+
+.about {
+    background-color: #000000;
+    height: 400px;
+    color: white;
+    padding-left: 70px;
+    position: relative;
+    padding: 20px;
+}
+
+.aboutus {
+    position: absolute;
+    top: 20px;
+    color: white;
+    left: 10px;
+}
+
+.links {
+    top: 3px;
+    left: 430px;
+    position: absolute;
+    width: 150px;
+    color: white;
+}
+
+.helping {
+    left: 700px;
+    position: absolute;
+    top: 18px;
+    color: white;
+}
+
+.helpingicons {
+    left: 1000px;
+    position: absolute;
+    top: 20px;
+    color: white;
+}
+
+.helpingicons input[type="email"] {
+    top: 20px;
+    position: absolute;
+    border-radius: 20px;
+    padding: 10px;
+    width: 20rem;
+}
+
+.icon img {
+    width: 120px;
+}
+
+.fb img {
+    width: 70px;
+    padding-top: 60px;
+
+}
+.twitter img{
+    width: 70px;
+    position: absolute;
+    left: 90px;
+    top: 60px;
+}
+/* IMAGE CONTAINER */
+
+* {
+    box-sizing: border-box
+}
+
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 2010px;
+    top: 30px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    top: 90px;
+    color: #f2f2f2;
+    font-size: 80px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 20px;
+    }
+}
+table,th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
